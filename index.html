@@ -7,17 +7,13 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
   <title>Win98Janken</title>
-  <link rel="manifest" href="manifest.json">
-  <link rel="icon" href="images/icons/favicon.ico">
-  <link rel="icon" sizes="192x192" href="images/icons/android-chrome-192x192.png">
-  <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
+  <link rel="icon" href="images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
 
 </head>
 
 <body class="win98">
-  <!-- Add your site or app content here -->
   <!--   最初に出るウインドウ-->
   <div class='window' id="modal_alert">
     <div class='header'>
@@ -97,18 +93,9 @@
   </div>
 
   <!-- JavaScriptの読み込み -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="scripts/main.js"></script>
 
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js').then(function (registration) {
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-      }).catch(function (err) {
-        console.log('ServiceWorker registration failed: ', err);
-      });
-    }
-  </script>
 </body>
 
 </html>
